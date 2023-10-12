@@ -1,0 +1,71 @@
+.images-container img {
+    width: 100%;
+}
+
+.color-strip {
+    background: var(--off-white);
+    padding: 20px 0;
+    margin-top:25px;
+}
+
+.addSpace {
+    width: 100%;
+    height: 25px;
+}
+
+.images-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.projects-container h1 {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.development-tools {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 25px;
+}
+
+.tool-bubble {
+    border: 1px solid var(--my-blue);
+    background-color: #0a52944f;
+    border-radius: 20px;
+    width: 125px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--my-blue);
+    margin: 5px;
+}
+
+img.pizza-gif {
+    margin-bottom: 5px;
+}
+
+.image-caption {
+    font-size: 11px;
+    font-style: italic;
+}
+
+.images-container.screenshot img {
+    margin-right: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 0px black;
+}
+
