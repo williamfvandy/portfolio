@@ -69,3 +69,9 @@ img.pizza-gif {
     box-shadow: 0px 0px 2px 0px black;
 }
 
+@media (max-width: 650px) {
+
+.images-container.screenshot img {
+    margin-right: 0px;
+}
+}
