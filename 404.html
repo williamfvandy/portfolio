@@ -24,6 +24,7 @@
 
 .error-message {
     display: flex;
+    width: 50%;
     justify-content: center;
     flex-direction: column;
 }
@@ -35,6 +36,11 @@
 
 .millie-container img { width: 50%; min-width:100px; }
 
+
+.custom-container {
+    max-width: 1000px;
+}
+
 @media (max-width: 767px) {
   .error-main {
     flex-direction: column;
@@ -43,7 +49,7 @@
 
   .error-message {
     text-align: center;
-    width: 50%;
+    width: 100%;
 }
 
   }
@@ -51,7 +57,7 @@
 </head>
 <body>
       <div class="container error-container">
-        <div class="custom-column">
+        <div class="custom-container">
                 <div class="error-main">
                 <div class="millie-container">
                 <img src="millie-error-page.png" alt="">
@@ -59,8 +65,8 @@
                   <div class="error-message">
                     <h1 class="display-4">Error 404</h1>
                     <p class="lead">Oops! My dog Millie says sorry.</p>
-                    <p>I may currently be tweaking my portfolio. <br>It'll be up and running soon.</p>
-                    
+                    <p>The page you are looking for might have been removed, had its name changed, or is temporarily unavailable. I may also be in the process of tweaking my portfolio.</p>
+                    <p>Try returning to the <a href="https://www.willvanderburg.com/">homepage</a>, or check back later.</p>
                 </div>
                 </div>
             </div>
