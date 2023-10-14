@@ -1,19 +1,15 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule, Routes } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ContactComponent } from './contact/contact.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
-const routes: Routes = [
-  { path: '', component: HomeComponent }, 
-    { path: 'projects', component: ProjectsComponent },
-  { path: 'experience', component: ExperienceComponent },
-  { path: 'contact', component: ContactComponent },
-];
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -21,14 +17,11 @@ const routes: Routes = [
     HomeComponent,
     ProjectsComponent,
     ExperienceComponent,
-    ContactComponent
+    ContactComponent,
+    NotFoundComponent,
   ],
-  imports: [
-    BrowserModule,
-    RouterModule.forRoot(routes), // Configure routes here
-  ],
-  exports: [RouterModule],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

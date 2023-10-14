@@ -51,4 +51,9 @@ label.servicesLabel {
     font-size: 1em;
     letter-spacing: 1px;
     text-align: center;
+    line-height: 30px;
+}
+
+@media (max-width: 767px) {
+.gray-section img { margin-bottom: 25px; }
 }

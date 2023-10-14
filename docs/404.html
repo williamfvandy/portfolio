@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>404 - Page Not Found</title>
+<style>
+        /* Custom styles for this error page */
+        .error-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            margin-top: 25px;
+            font-family: Arial;
+            width: 100%;
+        }
+        .error-main {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+        }
+
+.error-message {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+        .millie-container {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+.millie-container img { width: 50%; min-width:100px; }
+
+@media (max-width: 767px) {
+  .error-main {
+    flex-direction: column;
+        align-items: center;
+  }
+
+  .error-message {
+    text-align: center;
+    width: 50%;
+}
+
+  }
+    </style>
+</head>
+<body>
+      <div class="container error-container">
+        <div class="custom-column">
+                <div class="error-main">
+                <div class="millie-container">
+                <img src="millie-error-page.png" alt="">
+                </div>
+                  <div class="error-message">
+                    <h1 class="display-4">Error 404</h1>
+                    <p class="lead">Oops! My dog Millie says sorry.</p>
+                    <p>I may currently be tweaking my portfolio. <br>It'll be up and running soon.</p>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
